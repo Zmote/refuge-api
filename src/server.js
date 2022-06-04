@@ -5,7 +5,7 @@
  */
 require('dotenv').config();
 let app = require('../src/api/app');
-let debug = require('debug')('efgm-api:server');
+let debug = require('debug')('refuge-api:server');
 let http = require('http');
 
 /**

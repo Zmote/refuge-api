@@ -26,7 +26,7 @@ expressOasGenerator.init(app,
     function (spec) {
         return spec;
     },
-    'src/resource/efgm-api.swagger.json',
+    'src/resource/refuge-api.swagger.json',
     60 * 1000);
 
 //Setup logger

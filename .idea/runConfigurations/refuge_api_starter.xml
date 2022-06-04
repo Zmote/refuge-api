@@ -1,11 +1,11 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="efgm-api-starter" type="NodeJSConfigurationType" path-to-js-file="$PROJECT_DIR$/scripts/start.js" working-dir="$PROJECT_DIR$">
-    <envs>
-      <env name="DEBUG" value="efgm-api:*" />
-    </envs>
+  <configuration default="false" name="refuge-api-starter" type="NodeJSConfigurationType" path-to-js-file="scripts/start.js" working-dir="$PROJECT_DIR$">
     <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSStartBrowserRunConfigurationExtension">
       <browser url="http://localhost:3000/" />
     </EXTENSION>
+    <envs>
+      <env name="DEBUG" value="refuge-api:*" />
+    </envs>
     <method v="2" />
   </configuration>
 </component>

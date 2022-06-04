@@ -7,7 +7,11 @@
         "consumes": [
           "application/json"
         ],
-        "parameters": []
+        "parameters": [],
+        "responses": {
+          "302": {}
+        },
+        "tags": []
       }
     },
     "/auth/login": {
@@ -16,7 +20,9 @@
         "consumes": [
           "application/json"
         ],
-        "parameters": []
+        "parameters": [],
+        "responses": {},
+        "tags": []
       }
     },
     "/auth/signup": {
@@ -25,7 +31,9 @@
         "consumes": [
           "application/json"
         ],
-        "parameters": []
+        "parameters": [],
+        "responses": {},
+        "tags": []
       }
     },
     "/api/users/{userId}/logs": {
@@ -40,7 +48,9 @@
             "in": "path",
             "required": true
           }
-        ]
+        ],
+        "responses": {},
+        "tags": []
       },
       "post": {
         "summary": "/api/users/{userId}/logs",
@@ -53,7 +63,9 @@
             "in": "path",
             "required": true
           }
-        ]
+        ],
+        "responses": {},
+        "tags": []
       }
     },
     "/api/users/{userId}/logs/{logId}": {
@@ -73,7 +85,9 @@
             "in": "path",
             "required": true
           }
-        ]
+        ],
+        "responses": {},
+        "tags": []
       },
       "put": {
         "summary": "/api/users/{userId}/logs/{logId}",
@@ -91,7 +105,9 @@
             "in": "path",
             "required": true
           }
-        ]
+        ],
+        "responses": {},
+        "tags": []
       },
       "delete": {
         "summary": "/api/users/{userId}/logs/{logId}",
@@ -109,7 +125,9 @@
             "in": "path",
             "required": true
           }
-        ]
+        ],
+        "responses": {},
+        "tags": []
       }
     },
     "/api/users/{userId}/profile": {
@@ -124,7 +142,9 @@
             "in": "path",
             "required": true
           }
-        ]
+        ],
+        "responses": {},
+        "tags": []
       },
       "put": {
         "summary": "/api/users/{userId}/profile",
@@ -137,7 +157,9 @@
             "in": "path",
             "required": true
           }
-        ]
+        ],
+        "responses": {},
+        "tags": []
       }
     },
     "/api/users": {
@@ -147,16 +169,17 @@
           "application/json"
         ],
         "parameters": [],
-        "responses": {
-          "401": {}
-        }
+        "responses": {},
+        "tags": []
       },
       "post": {
         "summary": "/api/users",
         "consumes": [
           "application/json"
         ],
-        "parameters": []
+        "parameters": [],
+        "responses": {},
+        "tags": []
       }
     },
     "/api/users/{userId}": {
@@ -171,7 +194,9 @@
             "in": "path",
             "required": true
           }
-        ]
+        ],
+        "responses": {},
+        "tags": []
       },
       "delete": {
         "summary": "/api/users/{userId}",
@@ -184,7 +209,9 @@
             "in": "path",
             "required": true
           }
-        ]
+        ],
+        "responses": {},
+        "tags": []
       },
       "put": {
         "summary": "/api/users/{userId}",
@@ -197,7 +224,9 @@
             "in": "path",
             "required": true
           }
-        ]
+        ],
+        "responses": {},
+        "tags": []
       }
     },
     "/api/offers": {
@@ -206,14 +235,18 @@
         "consumes": [
           "application/json"
         ],
-        "parameters": []
+        "parameters": [],
+        "responses": {},
+        "tags": []
       },
       "post": {
         "summary": "/api/offers",
         "consumes": [
           "application/json"
         ],
-        "parameters": []
+        "parameters": [],
+        "responses": {},
+        "tags": []
       }
     },
     "/api/offers/{offerId}": {
@@ -228,7 +261,9 @@
             "in": "path",
             "required": true
           }
-        ]
+        ],
+        "responses": {},
+        "tags": []
       },
       "delete": {
         "summary": "/api/offers/{offerId}",
@@ -241,7 +276,9 @@
             "in": "path",
             "required": true
           }
-        ]
+        ],
+        "responses": {},
+        "tags": []
       },
       "put": {
         "summary": "/api/offers/{offerId}",
@@ -254,7 +291,9 @@
             "in": "path",
             "required": true
           }
-        ]
+        ],
+        "responses": {},
+        "tags": []
       }
     },
     "/api/people": {
@@ -263,14 +302,18 @@
         "consumes": [
           "application/json"
         ],
-        "parameters": []
+        "parameters": [],
+        "responses": {},
+        "tags": []
       },
       "post": {
         "summary": "/api/people",
         "consumes": [
           "application/json"
         ],
-        "parameters": []
+        "parameters": [],
+        "responses": {},
+        "tags": []
       }
     },
     "/api/people/{personId}": {
@@ -285,7 +328,9 @@
             "in": "path",
             "required": true
           }
-        ]
+        ],
+        "responses": {},
+        "tags": []
       },
       "delete": {
         "summary": "/api/people/{personId}",
@@ -298,7 +343,9 @@
             "in": "path",
             "required": true
           }
-        ]
+        ],
+        "responses": {},
+        "tags": []
       },
       "put": {
         "summary": "/api/people/{personId}",
@@ -311,7 +358,9 @@
             "in": "path",
             "required": true
           }
-        ]
+        ],
+        "responses": {},
+        "tags": []
       }
     },
     "/api/logs": {
@@ -320,14 +369,18 @@
         "consumes": [
           "application/json"
         ],
-        "parameters": []
+        "parameters": [],
+        "responses": {},
+        "tags": []
       },
       "post": {
         "summary": "/api/logs",
         "consumes": [
           "application/json"
         ],
-        "parameters": []
+        "parameters": [],
+        "responses": {},
+        "tags": []
       }
     },
     "/api/logs/{logId}": {
@@ -342,7 +395,9 @@
             "in": "path",
             "required": true
           }
-        ]
+        ],
+        "responses": {},
+        "tags": []
       },
       "put": {
         "summary": "/api/logs/{logId}",
@@ -355,7 +410,9 @@
             "in": "path",
             "required": true
           }
-        ]
+        ],
+        "responses": {},
+        "tags": []
       },
       "delete": {
         "summary": "/api/logs/{logId}",
@@ -368,13 +425,17 @@
             "in": "path",
             "required": true
           }
-        ]
+        ],
+        "responses": {},
+        "tags": []
       }
     }
   },
+  "tags": [],
+  "definitions": {},
   "info": {
-    "title": "efgm-api",
+    "title": "refuge-api",
     "version": "0.2.0",
-    "description": "[Specification JSON](/api-spec)"
+    "description": "Specification JSONs: [v2](/api-spec/v2), [v3](/api-spec/v3)."
   }
 }

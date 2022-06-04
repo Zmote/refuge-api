@@ -1,0 +1,407 @@
+{
+  "openapi": "3.0.0",
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "/",
+        "responses": {
+          "302": {
+            "description": ""
+          }
+        },
+        "tags": []
+      }
+    },
+    "/auth/login": {
+      "post": {
+        "summary": "/auth/login",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/auth/signup": {
+      "post": {
+        "summary": "/auth/signup",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/api/users/{userId}/logs": {
+      "get": {
+        "summary": "/api/users/{userId}/logs",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      },
+      "post": {
+        "summary": "/api/users/{userId}/logs",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/api/users/{userId}/logs/{logId}": {
+      "get": {
+        "summary": "/api/users/{userId}/logs/{logId}",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "logId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      },
+      "put": {
+        "summary": "/api/users/{userId}/logs/{logId}",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "logId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      },
+      "delete": {
+        "summary": "/api/users/{userId}/logs/{logId}",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "logId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/api/users/{userId}/profile": {
+      "get": {
+        "summary": "/api/users/{userId}/profile",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      },
+      "put": {
+        "summary": "/api/users/{userId}/profile",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/api/users": {
+      "get": {
+        "summary": "/api/users",
+        "responses": {},
+        "tags": []
+      },
+      "post": {
+        "summary": "/api/users",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/api/users/{userId}": {
+      "get": {
+        "summary": "/api/users/{userId}",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      },
+      "delete": {
+        "summary": "/api/users/{userId}",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      },
+      "put": {
+        "summary": "/api/users/{userId}",
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/api/offers": {
+      "get": {
+        "summary": "/api/offers",
+        "responses": {},
+        "tags": []
+      },
+      "post": {
+        "summary": "/api/offers",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/api/offers/{offerId}": {
+      "get": {
+        "summary": "/api/offers/{offerId}",
+        "parameters": [
+          {
+            "name": "offerId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      },
+      "delete": {
+        "summary": "/api/offers/{offerId}",
+        "parameters": [
+          {
+            "name": "offerId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      },
+      "put": {
+        "summary": "/api/offers/{offerId}",
+        "parameters": [
+          {
+            "name": "offerId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/api/people": {
+      "get": {
+        "summary": "/api/people",
+        "responses": {},
+        "tags": []
+      },
+      "post": {
+        "summary": "/api/people",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/api/people/{personId}": {
+      "get": {
+        "summary": "/api/people/{personId}",
+        "parameters": [
+          {
+            "name": "personId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      },
+      "delete": {
+        "summary": "/api/people/{personId}",
+        "parameters": [
+          {
+            "name": "personId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      },
+      "put": {
+        "summary": "/api/people/{personId}",
+        "parameters": [
+          {
+            "name": "personId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/api/logs": {
+      "get": {
+        "summary": "/api/logs",
+        "responses": {},
+        "tags": []
+      },
+      "post": {
+        "summary": "/api/logs",
+        "responses": {},
+        "tags": []
+      }
+    },
+    "/api/logs/{logId}": {
+      "get": {
+        "summary": "/api/logs/{logId}",
+        "parameters": [
+          {
+            "name": "logId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      },
+      "put": {
+        "summary": "/api/logs/{logId}",
+        "parameters": [
+          {
+            "name": "logId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      },
+      "delete": {
+        "summary": "/api/logs/{logId}",
+        "parameters": [
+          {
+            "name": "logId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": []
+      }
+    }
+  },
+  "tags": [],
+  "info": {
+    "title": "refuge-api",
+    "version": "0.2.0",
+    "description": "Specification JSONs: [v2](/api-spec/v2), [v3](/api-spec/v3)."
+  }
+}
