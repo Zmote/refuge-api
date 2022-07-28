@@ -22,7 +22,8 @@ async function login(req, res, next) {
 }
 
 async function signup(req, res, next) {
-    let userDto = {username, password} = req.body;
+    let {username, password} = req.body;
+    let userDto = {username, password};
     let user = await USER_SERVICE.createUser(userDto);
     if (user !== null) {
         const payload = {

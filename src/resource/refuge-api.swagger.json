@@ -8,9 +8,7 @@
           "application/json"
         ],
         "parameters": [],
-        "responses": {
-          "302": {}
-        },
+        "responses": {},
         "tags": []
       }
     },
@@ -21,8 +19,24 @@
           "application/json"
         ],
         "parameters": [],
-        "responses": {},
-        "tags": []
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "token": {
+                  "type": "string",
+                  "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiemRvZzEiLCJpYXQiOjE2NTkwMzQzMDYsImV4cCI6MTY1OTEyMDcwNn0.y1i_J5kDgmCfFPJ3Kt7bskJU32g7puQHRPAFQkp6y-g"
+                }
+              }
+            }
+          }
+        },
+        "tags": [],
+        "produces": [
+          "application/json"
+        ]
       }
     },
     "/auth/signup": {
@@ -32,8 +46,36 @@
           "application/json"
         ],
         "parameters": [],
-        "responses": {},
-        "tags": []
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "token": {
+                  "type": "string",
+                  "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiemRvZzEiLCJpYXQiOjE2NTkwMzQyNzUsImV4cCI6MTY1OTEyMDY3NX0.SybHd7jTZeR00Mm5oDBiVihkeLCOAlK5WhDgilKeMeE"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string",
+                  "example": "Something went wrong! Validation error"
+                }
+              }
+            }
+          }
+        },
+        "tags": [],
+        "produces": [
+          "application/json"
+        ]
       }
     },
     "/api/users/{userId}/logs": {

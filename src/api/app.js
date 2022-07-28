@@ -1,6 +1,7 @@
 //Check package.json for alias paths (@somepath etc.)
 require('module-alias/register');
 let express = require('express');
+let cors = require('cors');
 let rateLimit = require('express-rate-limit');
 let xss = require('xss-clean');
 let helmet = require('helmet');
@@ -41,6 +42,7 @@ if (process.env.NODE_ENV === "development") {
 app.use(express.json({limit: '10kb'}));
 app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
+app.use(cors());
 app.use(helmet());
 app.use(xss());
 app.use(express.static(path.join(__dirname, '../resource/static')));

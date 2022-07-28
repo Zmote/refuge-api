@@ -4,25 +4,71 @@
     "/": {
       "get": {
         "summary": "/",
-        "responses": {
-          "302": {
-            "description": ""
-          }
-        },
+        "responses": {},
         "tags": []
       }
     },
     "/auth/login": {
       "post": {
         "summary": "/auth/login",
-        "responses": {},
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "token": {
+                      "type": "string",
+                      "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiemRvZzEiLCJpYXQiOjE2NTkwMzQzMDYsImV4cCI6MTY1OTEyMDcwNn0.y1i_J5kDgmCfFPJ3Kt7bskJU32g7puQHRPAFQkp6y-g"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
         "tags": []
       }
     },
     "/auth/signup": {
       "post": {
         "summary": "/auth/signup",
-        "responses": {},
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "token": {
+                      "type": "string",
+                      "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiemRvZzEiLCJpYXQiOjE2NTkwMzQyNzUsImV4cCI6MTY1OTEyMDY3NX0.SybHd7jTZeR00Mm5oDBiVihkeLCOAlK5WhDgilKeMeE"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "message": {
+                      "type": "string",
+                      "example": "Something went wrong! Validation error"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
         "tags": []
       }
     },
